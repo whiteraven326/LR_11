@@ -1,15 +1,15 @@
-﻿program z4;
-uses graphabc;
+program z4;
+uses GraphABC;
+var r: integer;
 begin
-setpencolor(clrandom);
-circle(300,200,100);
-circle(300,200,90);
-circle(300,200,80);
-circle(300,200,70);
-circle(300,200,60);
-circle(300,200,50);
-circle(300,200,40);
-circle(300,200,30);
-circle(300,200,20);
-circle(300,200,10);
+  SetWindowHeight(500);
+  SetWindowWidth(500);
+
+r:= 200;
+while r>0 do
+begin
+  setbrushcolor(clrandom);
+  circle(250,250,r);
+  r:=r-2;
+ end;
 end.
